@@ -1,0 +1,40 @@
+.banner{
+    background-image: url("../../assets/img/sanfelix.png");
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 25%;
+    position: relative;
+    z-index:1
+}
+
+.banner2{
+    background-image: url("../../assets/img/chimenea.png");
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 25%;
+}
+
+.zoom{
+    transition: transform .2s;
+}
+
+.zoom:hover{
+    transform: scale(1.02);
+}
+
+.banner::after{
+    content: '';
+    background-color:black ;
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+
+
