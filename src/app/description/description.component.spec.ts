@@ -9,7 +9,8 @@ describe('DescriptionComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [DescriptionComponent]
-    });
+    }).compileComponents();
+    
     fixture = TestBed.createComponent(DescriptionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

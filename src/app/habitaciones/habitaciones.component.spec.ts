@@ -7,10 +7,12 @@ describe('HabitacionesComponent', () => {
   let component: HabitacionesComponent;
   let fixture: ComponentFixture<HabitacionesComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [HabitacionesComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ HabitacionesComponent ]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(HabitacionesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
