@@ -5,7 +5,9 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent { public scrolled: boolean = false;
+export class MenuComponent { 
+  
+  public scrolled: boolean = false;
 
   constructor(private renderer: Renderer2) { }
 
