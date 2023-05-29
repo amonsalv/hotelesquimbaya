@@ -40,7 +40,7 @@ export class HabitacionesComponent {
     cantidadMaxima:4
   }
 
-  public habitaciones:Habitacion[]=[this.habitacion1,this.habitacion2]
+  public habitaciones:Habitacion[]=[this.habitacion1,this.habitacion2,this.habitacion1,this.habitacion2,this.habitacion1,this.habitacion2,this.habitacion1,this.habitacion2]
 
   public constructor(){
     console.log(this.habitaciones)
