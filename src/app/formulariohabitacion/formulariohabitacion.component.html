@@ -1,1 +1,32 @@
-<p>formulariohabitacion works!</p>
+<div class="container my-5">
+    <div class="row jsutify-content-center">
+        <div class="col-8">
+
+            <form [formGroup]="formulario" (ngSubmit)="recogerInformacion()">
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" formControlName="nombre">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Foto</label>
+                    <input type="text" class="form-control" formControlName="foto">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Descripcion</label>
+                    <input type="text" class="form-control" formControlName="descripcion">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Precio</label>
+                    <input type="number" class="form-control" formControlName="precioNoche">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" formControlName="cantidadmaxima">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">registrar</button>
+            </form>
+
+        </div>
+    </div>
+</div>

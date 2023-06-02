@@ -1,16 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormulariohabitacionComponent } from './formulariohabitacion.component';
+import { FormularioHabitacionComponent } from './formulario-habitacion.component';
 
-describe('FormulariohabitacionComponent', () => {
-  let component: FormulariohabitacionComponent;
-  let fixture: ComponentFixture<FormulariohabitacionComponent>;
+describe('FormularioHabitacionComponent', () => {
+  let component: FormularioHabitacionComponent;
+  let fixture: ComponentFixture<FormularioHabitacionComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [FormulariohabitacionComponent]
-    });
-    fixture = TestBed.createComponent(FormulariohabitacionComponent);
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ FormularioHabitacionComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(FormularioHabitacionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
