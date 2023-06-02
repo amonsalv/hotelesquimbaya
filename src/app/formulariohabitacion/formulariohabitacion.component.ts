@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {FormGroup,FormBuilder} from '@angular/forms'
-import { HabitacionService } from '../habitacion.service';
+//import { HabitacionService } from '../habitacion.service';
 
 
 
@@ -14,14 +14,14 @@ export class FormularioHabitacionComponent {
   formulario!:FormGroup;
   datos:any[]=[];
 
-  constructor( public fabricaDiccionario:FormBuilder, public servicioHabitacion:HabitacionService) { 
+  constructor( public fabricaDiccionario:FormBuilder) { //, public servicioHabitacion:HabitacionService
     this.formulario=this.inicializarFormulario()
 
   }
 
   public inicializarFormulario():FormGroup{
     return this.fabricaDiccionario.group({
-      nombre:['juan'],
+      nombre:[''],
       foto:[''],
       descripcion:[''],
       precioNoche:[''],
@@ -29,7 +29,7 @@ export class FormularioHabitacionComponent {
     })
   }
 
-  public recogerInformacion():void{
+ /* public recogerInformacion():void{
 
     let datos=this.formulario.value
     
@@ -38,7 +38,7 @@ export class FormularioHabitacionComponent {
       console.log(respuesta)
     })
 
-  }
+  }*/
   
 
 
