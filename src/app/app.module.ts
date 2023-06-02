@@ -17,17 +17,19 @@ import { FormulariohabitacionComponent } from './formulariohabitacion/formulario
     AppComponent,
     HomeComponent,
     MenuComponent,
-    DescriptionComponent,
+    DescripcionComponent,
     FooterComponent,
     HabitacionesComponent,
-    FormulariohabitacionComponent
+    RoomsComponent,
+    FormularioHabitacionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

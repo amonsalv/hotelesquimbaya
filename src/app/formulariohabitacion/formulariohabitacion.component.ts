@@ -6,8 +6,8 @@ import { HabitacionService } from '../habitacion.service';
 
 @Component({
   selector: 'app-formulario-habitacion',
-  templateUrl: './formulario-habitacion.component.html',
-  styleUrls: ['./formulario-habitacion.component.css']
+  templateUrl: './formulariohabitacion.component.html',
+  styleUrls: ['./formulariohabitacion.component.css']
 })
 export class FormularioHabitacionComponent {
 
