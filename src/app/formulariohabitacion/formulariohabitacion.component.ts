@@ -1,45 +1,32 @@
 import { Component } from '@angular/core';
-import {FormGroup,FormBuilder} from '@angular/forms'
-
-
+import {FormGroup, FormBuilder} from '@angular/forms'
 
 @Component({
   selector: 'app-formulario-habitacion',
   templateUrl: './formulariohabitacion.component.html',
   styleUrls: ['./formulariohabitacion.component.css']
 })
-export class FormularioHabitacionComponent {
+//hacemos la validacion de formulario que se hace por medio de ts
+export class FormulariohabitacionComponent {
 
-  formulario!:FormGroup;
-  datos:any[]=[];
+  public formulario:FormGroup
+  public datosFormulario:any[]=[]
 
-  constructor( public fabricaDiccionario:FormBuilder) { //, public servicioHabitacion:HabitacionService
+  public constructor (public constructorFormulario:FormBuilder){
     this.formulario=this.inicializarFormulario()
-
   }
 
+  //indicamos al ts que inputs tenemos asociados al html
   public inicializarFormulario():FormGroup{
-    return this.fabricaDiccionario.group({
-      nombre:[''],
+    return this.constructorFormulario.group({
+      //arreglos y el valor que le vamos a asignar
+      nombre:[''], 
       foto:[''],
       descripcion:[''],
       precioNoche:[''],
-      cantidadmaxima:['']
+      cantMaxima:['']
     })
   }
-
- /* public recogerInformacion():void{
-
-    let datos=this.formulario.value
-    
-    this.servicioHabitacion.registrarHabitacion(datos)
-    .subscribe(respuesta=>{
-      console.log(respuesta)
-    })
-
-  }*/
-  
-
 
 
 }

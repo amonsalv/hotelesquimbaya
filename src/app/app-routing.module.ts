@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { FormularioHabitacionComponent } from './formulariohabitacion/formulariohabitacion.component';
+import { FormulariohabitacionComponent } from './formulariohabitacion/formulariohabitacion.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent,pathMatch:"full"},
-  {path:"adminHabitacion",component:FormularioHabitacionComponent}
-];
+  {path:"registrohabitacion",component:FormulariohabitacionComponent}
+]; //vamos a enrutar desde componentes
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
