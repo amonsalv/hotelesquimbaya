@@ -16,8 +16,16 @@ export class FormulariohabitacionComponent {
     this.formulario=this.inicializarFormulario()
   }
 
+  //indicamos al ts que inputs tenemos asociados al html
   public inicializarFormulario():FormGroup{
-    return this.constructorFormulario.group({})
+    return this.constructorFormulario.group({
+      //arreglos y el valor que le vamos a asignar
+      nombre:[''], 
+      foto:[''],
+      descripcion:[''],
+      precioNoche:[''],
+      cantMaxima:['']
+    })
   }
 
 
