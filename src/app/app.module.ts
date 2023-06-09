@@ -18,10 +18,9 @@ import { FormulariohabitacionComponent } from './formulariohabitacion/formulario
     AppComponent,
     HomeComponent,
     MenuComponent,
-    DescripcionComponent,
+    DescriptionComponent,
     FooterComponent,
     HabitacionesComponent,
-    RoomsComponent,
     FormularioHabitacionComponent
   ],
   imports: [
