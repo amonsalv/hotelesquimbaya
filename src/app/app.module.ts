@@ -12,6 +12,7 @@ import { DescriptionComponent } from './description/description.component';
 import { FooterComponent } from './footer/footer.component';
 import { HabitacionesComponent } from './habitaciones/habitaciones.component';
 import { FormulariohabitacionComponent } from './formulariohabitacion/formulariohabitacion.component';
+import { FormularioreservaComponent } from './formularioreserva/formularioreserva.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormulariohabitacionComponent } from './formulariohabitacion/formulario
     DescriptionComponent,
     FooterComponent,
     HabitacionesComponent,
-    FormulariohabitacionComponent
+    FormulariohabitacionComponent,
+    FormularioreservaComponent
   ],
   imports: [
     BrowserModule,

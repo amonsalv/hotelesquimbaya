@@ -1,3 +1,7 @@
+body {
+    scroll-behavior: smooth;
+  }
+
 .menu{
     background-color: transparent;
     transition: 1s;
