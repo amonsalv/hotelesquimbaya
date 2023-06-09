@@ -1,25 +1,23 @@
 import { Component } from '@angular/core';
-import {FormGroup,FormBuilder} from '@angular/forms'
-
-
+import {FormGroup, FormBuilder} from '@angular/forms'
+import { HabitacionesService } from '../services/habitacion.service';
 
 @Component({
-  selector: 'app-formulario-habitacion',
+  selector: 'app-formulariohabitacion',
   templateUrl: './formulariohabitacion.component.html',
   styleUrls: ['./formulariohabitacion.component.css']
 })
-export class FormularioHabitacionComponent {
+export class FormulariohabitacionComponent {
 
-  formulario!:FormGroup;
-  datos:any[]=[];
+  public formulario:FormGroup
+  public datosFormulario:any[]=[]
 
-  constructor( public fabricaDiccionario:FormBuilder) { //, public servicioHabitacion:HabitacionService
+  public constructor(public constructorFormulario:FormBuilder,public servicio:HabitacionesService){
     this.formulario=this.inicializarFormulario()
-
   }
 
   public inicializarFormulario():FormGroup{
-    return this.fabricaDiccionario.group({
+    return this.constructorFormulario.group({
       nombre:[''],
       foto:[''],
       descripcion:[''],
@@ -28,18 +26,16 @@ export class FormularioHabitacionComponent {
     })
   }
 
- /* public recogerInformacion():void{
+  public procesarDatos():void{
 
     let datos=this.formulario.value
     
-    this.servicioHabitacion.registrarHabitacion(datos)
-    .subscribe(respuesta=>{
+    this.servicio.RegistarHabitacion(datos)
+    .subscribe((respuesta)=>{
       console.log(respuesta)
     })
 
-  }*/
-  
-
+  }
 
 
 }
