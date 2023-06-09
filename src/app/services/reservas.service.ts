@@ -9,7 +9,7 @@ import {Observable} from 'rxjs'
 
 export class ReservasService {
 
-  public url: string = "https://pruebaapihoteles.vercel.app/"
+  public url: string = "https://servidor-viernes.vercel.app/"
 
   constructor(public servicioReserva: HttpClient) { }
 
