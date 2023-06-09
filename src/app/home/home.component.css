@@ -1,3 +1,7 @@
+body {
+    scroll-behavior: smooth;
+  }
+
 .banner{
     background-image: url("../../assets/img/sanfelix.png");
     background-position: top center;
@@ -15,6 +19,8 @@
     background-attachment: fixed;
     padding: 25%;
 }
+
+
 
 .zoom{
     transition: transform .2s;

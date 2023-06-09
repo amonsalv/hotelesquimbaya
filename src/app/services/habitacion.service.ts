@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class HabitacionService {
 
   
-  public url:string='https://pruegaapi20231.vercel.app/'
+  public url:string='https://pruebaapihoteles.vercel.app/'
 
   constructor(public servicioHabitacion:HttpClient) { }
 
