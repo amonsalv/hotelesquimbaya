@@ -21,7 +21,7 @@ import { FormulariohabitacionComponent } from './formulariohabitacion/formulario
     DescriptionComponent,
     FooterComponent,
     HabitacionesComponent,
-    FormularioHabitacionComponent
+    FormulariohabitacionComponent
   ],
   imports: [
     BrowserModule,
