@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {FormGroup, FormBuilder} from '@angular/forms'
 import { HabitacionService } from '../services/habitacion.service';
+import { ReservasService } from '../services/reservas.service';
 
 @Component({
   selector: 'app-formulario-habitacion',
@@ -12,9 +13,18 @@ export class FormulariohabitacionComponent {
 
   public formulario:FormGroup
   public datosFormulario:any[]=[]
+  public habitaciones: any
 
-  public constructor (public constructorFormulario:FormBuilder, public servicio:HabitacionService){
+  public constructor (public constructorFormulario:FormBuilder, public servicio:ReservasService ,public servicioHabitacion:HabitacionService){
     this.formulario=this.inicializarFormulario()
+    this.servicioHabitacion.buscarHabitaciones().subscribe({
+      next: (respuesta) => {
+        this.habitaciones= respuesta.habitaciones
+        console.log(respuesta)
+      }, error: (Error)=>{
+        console.log(Error)
+      }
+    })
   }
 
   //indicamos al ts que inputs tenemos asociados al html
@@ -32,10 +42,14 @@ export class FormulariohabitacionComponent {
   public procesarDatos():void{
 
     let datos=this.formulario.value
-
-    this.servicio.registrarHabitacion(datos)
-    .subscribe((respuesta)=>{
-      console.log(respuesta)
-    })
-  }
+    
+    this.servicio.registrarReserva(datos).subscribe({
+      next: (respuesta) => { 
+        location.reload()
+      }, 
+        error: (Error) => {
+          console.log(Error)
+          }
+        })
+      }
 }
