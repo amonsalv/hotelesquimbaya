@@ -6,6 +6,7 @@ import { FormulariohabitacionComponent } from './formulariohabitacion/formulario
 const routes: Routes = [
   {path:"",component:HomeComponent,pathMatch:"full"},
   {path:"adminHabitacion",component:FormulariohabitacionComponent}
+  
 ];
 
 @NgModule({
