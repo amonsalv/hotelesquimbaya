@@ -1,72 +1,72 @@
-# Hoteles Quimbaya
+# Quimbaya Hotels
 
-¡Bienvenido/a al repositorio de Hoteles Quimbaya! Este repositorio contiene el código fuente de un proyecto creado con Angular, una plataforma de desarrollo de aplicaciones web.
+Welcome to the Quimbaya Hotels repository! This repository contains the source code of a project created with Angular, a web application development platform.
 
-## Descripción del proyecto
+## Project description
 
-El objetivo de este proyecto es desarrollar una aplicación web utilizando Angular que permita a los usuarios buscar, reservar y administrar habitaciones de hoteles en la ciudad de Quimbaya. La aplicación proporciona una interfaz intuitiva y amigable para que los usuarios puedan explorar diferentes hoteles, ver detalles de las habitaciones disponibles, realizar reservas y administrar sus reservas existentes.
+The goal of this project is to develop a web application using Angular that allows users to search, book and manage hotel rooms in the city of Quimbaya. The application provides an intuitive and friendly interface for users to browse different hotels, view details of available rooms, make reservations and manage their existing reservations.
 
-## Tecnologías utilizadas
+## Technologies used
 
-El proyecto se ha desarrollado utilizando las siguientes tecnologías:
+The project has been developed using the following technologies:
 
-- **Angular**: Es un framework de desarrollo de aplicaciones web de código abierto basado en TypeScript. Angular permite crear aplicaciones de una sola página (SPA) de manera eficiente y escalable.
+- **Angular**: It is an open source web application development framework based on TypeScript. Angular allows to create single page applications (SPA) in an efficient and scalable way.
 
-- **HTML**: Se utiliza para definir la estructura y el contenido de las páginas web.
+- HTML**: Used to define the structure and content of web pages.
 
-- **CSS**: Se utiliza para dar estilo y diseño a las páginas web.
+- CSS**: Used to style and design web pages.
 
-- **TypeScript**: Es un lenguaje de programación basado en JavaScript que agrega características adicionales, como el tipado estático, aportando mayor robustez al código.
+- TypeScript**: It is a programming language based on JavaScript that adds additional features, such as static typing, providing greater robustness to the code.
 
-## Estructura del repositorio
+## Repository structure
 
-El repositorio está organizado de la siguiente manera:
+The repository is organized as follows:
 
-- `app/`: Esta carpeta contiene el código fuente de la aplicación Angular.
-- `docs/`: Aquí encontrarás documentación adicional relacionada con el proyecto.
-- `tests/`: En esta carpeta se encuentran los archivos de prueba para el código.
-- `README.md`: Este archivo que estás leyendo actualmente, proporciona información general sobre el repositorio.
+- `app/`: This folder contains the source code of the Angular application.
+- docs/`: Here you will find additional documentation related to the project.
+- tests/`: This folder contains the test files for the code.
+- `README.md`: This file, which you are currently reading, provides general information about the repository.
 
-## Configuración del entorno de desarrollo
+## Setting up the development environment
 
-Para configurar el entorno de desarrollo y ejecutar el proyecto de manera local, sigue los siguientes pasos:
+To set up the development environment and run the project locally, follow the steps below:
 
-1. Clona este repositorio en tu máquina local usando el siguiente comando:
+1. Clone this repository on your local machine using the following command:
    ```
    git clone https://github.com/amonsalv/hotelesquimbaya.git
    ```
 
-2. Accede al directorio del proyecto:
+2. Access the project directory:
    ```
    cd hotelesquimbaya
    ```
 
-3. Instala las dependencias del proyecto ejecutando el siguiente comando:
+3. Install the project dependencies by executing the following command:
    ```
    npm install
    ```
 
-4. Inicia la aplicación localmente:
+4. Start the application locally:
    ```
    npm start
    ```
 
-   Esto iniciará un servidor de desarrollo y la aplicación estará disponible en tu navegador en la dirección `http://localhost:4200`.
+   This will start a development server and the application will be available in your browser at the address `http://localhost:4200`.
 
-## Contribuciones
+## Contributions
 
-Si deseas contribuir a este proyecto, ¡te damos la bienvenida! Puedes hacerlo siguiendo los pasos descritos en la sección de Contribuciones en el archivo `README.md` del repositorio.
+If you wish to contribute to this project, we welcome you! You can do so by following the steps described in the Contributions section of the `README.md` file in the repository.
 
-## Problemas
+## Issues
 
-Si encuentras algún problema o tienes alguna sugerencia para mejorar este proyecto, por favor abre un [issue](https://github.com/amonsalv/hotelesquimbaya/issues) en este repositorio. Estaremos encantados de ayudarte.
+If you encounter any problems or have any suggestions for improving this project, please open an [issue](https://github.com/amonsalv/hotelesquimbaya/issues) in this repository. We will be happy to help you.
 
-## Licencia
+## License
 
-Este proyecto está bajo la licencia [MIT](https://github.com/amonsalv/hotelesquimbaya/blob/main/LICENSE). Por favor lee el archivo `LICENSE` para más detalles.
+This project is licensed under the [MIT](https://github.com/amonsalv/hotelesquimbaya/blob/main/LICENSE) license. Please read the `LICENSE` file for more details.
 
-## Contacto
+## Contact us
 
-Si tienes alguna pregunta o consulta relacionada con este proyecto, puedes contactarme a través de mi dirección de correo electrónico: amonsalv7@gmail.com 
+If you have any questions or queries related to this project, you can contact me through my email address: amonsalv7@gmail.com 
 
-¡Gracias por tu interés en el proyecto Hoteles Quimbaya! Esperamos que sea útil y contribuyas a mejorarlo.
+Thank you for your interest in the Quimbaya Hotels project! We hope it will be useful and you will contribute to improve it.
